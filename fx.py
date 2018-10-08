@@ -56,5 +56,5 @@ def pi_arr(n):
     for i in range(0, n - 1):
         if arr[i] > 0:
             count += 1
-        pi.append([count / 1.])
+        pi.append([count / 25.])
     return pi

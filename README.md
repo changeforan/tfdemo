@@ -1,5 +1,8 @@
-# tfdemo
+# Requirements
 
-a_0 = 0
+Python 3.6
 
-a_(n+1) = {a_(n)^2 + 1} / 2
+Matplotlib 2.2.3
+
+Tensorflow
+
