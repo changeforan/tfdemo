@@ -1,6 +1,14 @@
 import numpy as np
 
 
+# LPCNet 18-band Bark and LPC
+class LPCNet:
+    def __init__(self):
+        feats = np.load('D:/LPC/feats_34/feats_34.npy')
+        self.x_ = feats[:, :18]
+        self.y_ = feats[:, -16:]
+
+
 # f(x) = ax^2+b
 class Quadratic:
     def __init__(self,
@@ -56,5 +64,5 @@ def pi_arr(n):
     for i in range(0, n - 1):
         if arr[i] > 0:
             count += 1
-        pi.append([count / 25.])
+        pi.append([count / 1.])
     return pi
